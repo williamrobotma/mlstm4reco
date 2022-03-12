@@ -23,7 +23,7 @@ from hyperopt import Trials, hp, fmin, STATUS_OK, STATUS_FAIL
 from mlstm4reco.representations import mLSTMNet
 
 
-CUDA = torch.cuda.is_available()
+CUDA = False
 
 # Start IPython shell on exception (nice for debugging)
 sys.excepthook = ultratb.FormattedTB(mode='Verbose', color_scheme='Linux', call_pdb=1)
